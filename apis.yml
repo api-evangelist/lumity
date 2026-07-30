@@ -1,8 +1,26 @@
 aid: lumity
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lumity.png
 name: Lumity
-description: 'Lumity is a company surfaced as a portfolio company of threshold-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Lumity is a digital employee benefits broker (part of Alera Group) that acts as an extension
+  of HR teams, combining benefits-administration technology with dedicated benefits experts. Its platform
+  centralizes plan management, eligibility, employee enrollment (web and mobile), renewal strategy and
+  negotiation, year-round employee support, PEO migration, and reporting/analytics with cost forecasting.
+  Lumity markets outcomes such as average cost savings through smarter plan selection and per-employee
+  annual savings. It surfaced in the API Evangelist network as a portfolio company of Threshold Ventures
+  (fintech). Enrichment found no first-party public API, developer portal, or specifications: the employer
+  login portal (er-portal.lumity.com) redirects to the third-party PlanYear platform, and legal pages are
+  served under Alera Group.'
 url: https://raw.githubusercontent.com/api-evangelist/lumity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Employee Benefits
+- Insurance
+- Benefits Administration
+- Human Resources
+- InsurTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +48,18 @@ maintainers:
 common:
 - type: Website
   url: http://www.lumity.com/
+- type: Blog
+  url: https://lumity.com/lumity-blog
+- type: Login
+  url: https://er-portal.lumity.com/
+- type: PrivacyPolicy
+  url: https://aleragroup.com/privacy-policy
+- type: TermsOfService
+  url: https://aleragroup.com/terms
+- type: DomainSecurity
+  url: security/lumity-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
